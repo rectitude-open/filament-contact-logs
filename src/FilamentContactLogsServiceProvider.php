@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace RectitudeOpen\FilamentContactLogs;
 
 use Filament\Support\Assets\AlpineComponent;
@@ -10,11 +12,11 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
+use RectitudeOpen\FilamentContactLogs\Commands\FilamentContactLogsCommand;
+use RectitudeOpen\FilamentContactLogs\Testing\TestsFilamentContactLogs;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RectitudeOpen\FilamentContactLogs\Commands\FilamentContactLogsCommand;
-use RectitudeOpen\FilamentContactLogs\Testing\TestsFilamentContactLogs;
 
 class FilamentContactLogsServiceProvider extends PackageServiceProvider
 {
@@ -63,27 +65,27 @@ class FilamentContactLogsServiceProvider extends PackageServiceProvider
     public function packageBooted(): void
     {
         // Asset Registration
-        FilamentAsset::register(
-            $this->getAssets(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::register(
+        //     $this->getAssets(),
+        //     $this->getAssetPackageName()
+        // );
 
-        FilamentAsset::registerScriptData(
-            $this->getScriptData(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::registerScriptData(
+        //     $this->getScriptData(),
+        //     $this->getAssetPackageName()
+        // );
 
         // Icon Registration
-        FilamentIcon::register($this->getIcons());
+        // FilamentIcon::register($this->getIcons());
 
         // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-contact-logs/{$file->getFilename()}"),
-                ], 'filament-contact-logs-stubs');
-            }
-        }
+        // if (app()->runningInConsole()) {
+        //     foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+        //         $this->publishes([
+        //             $file->getRealPath() => base_path("stubs/filament-contact-logs/{$file->getFilename()}"),
+        //         ], 'filament-contact-logs-stubs');
+        //     }
+        // }
 
         // Testing
         Testable::mixin(new TestsFilamentContactLogs);
@@ -101,8 +103,8 @@ class FilamentContactLogsServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-contact-logs', __DIR__ . '/../resources/dist/components/filament-contact-logs.js'),
-            Css::make('filament-contact-logs-styles', __DIR__ . '/../resources/dist/filament-contact-logs.css'),
-            Js::make('filament-contact-logs-scripts', __DIR__ . '/../resources/dist/filament-contact-logs.js'),
+            // Css::make('filament-contact-logs-styles', __DIR__ . '/../resources/dist/filament-contact-logs.css'),
+            // Js::make('filament-contact-logs-scripts', __DIR__ . '/../resources/dist/filament-contact-logs.js'),
         ];
     }
 
@@ -146,7 +148,7 @@ class FilamentContactLogsServiceProvider extends PackageServiceProvider
     protected function getMigrations(): array
     {
         return [
-            'create_filament-contact-logs_table',
+            'create_contact_logs_table',
         ];
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace RectitudeOpen\FilamentContactLogs\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
@@ -15,8 +17,8 @@ use Filament\Widgets\WidgetsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
 use RectitudeOpen\FilamentContactLogs\FilamentContactLogsServiceProvider;
+use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
 
 class TestCase extends Orchestra
 {

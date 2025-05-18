@@ -1,9 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace RectitudeOpen\FilamentContactLogs;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use RectitudeOpen\FilamentContactLogs\Resources\ContactLogResource;
 
 class FilamentContactLogsPlugin implements Plugin
 {
@@ -14,7 +17,10 @@ class FilamentContactLogsPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $panel
+            ->resources([
+                config('filament-contact-logs.filament_resource', ContactLogResource::class),
+            ]);
     }
 
     public function boot(Panel $panel): void
