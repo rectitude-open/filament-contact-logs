@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RectitudeOpen\FilamentContactLogs\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentContactLogsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-contact-logs';
 
     public $description = 'My command';
 

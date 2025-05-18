@@ -1,10 +1,10 @@
-# :package_description
+# This is my package filament-contact-logs
 
 ![Do not use](https://img.shields.io/badge/Under%20development-Don't%20use-red)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![Tests](https://github.com/:vendor_slug/:package_slug/actions/workflows/run-tests.yml/badge.svg)](https://github.com/:vendor_slug/:package_slug/actions/workflows/run-tests.yml)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/rectitude-open/filament-contact-logs.svg?style=flat-square)](https://packagist.org/packages/rectitude-open/filament-contact-logs)
+[![Tests](https://github.com/rectitude-open/filament-contact-logs/actions/workflows/run-tests.yml/badge.svg)](https://github.com/rectitude-open/filament-contact-logs/actions/workflows/run-tests.yml)
 [![PHPStan](https://img.shields.io/badge/PHPStan-level%205-brightgreen)](https://phpstan.org/)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Total Downloads](https://img.shields.io/packagist/dt/rectitude-open/filament-contact-logs.svg?style=flat-square)](https://packagist.org/packages/rectitude-open/filament-contact-logs)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -13,26 +13,26 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require rectitude-open/filament-contact-logs
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
+php artisan vendor:publish --tag="filament-contact-logs-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-config"
+php artisan vendor:publish --tag="filament-contact-logs-config"
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-views"
+php artisan vendor:publish --tag="filament-contact-logs-views"
 ```
 
 This is the contents of the published config file:
@@ -45,8 +45,8 @@ return [
 ## Usage
 
 ```php
-$variable = new VendorName\Skeleton();
-echo $variable->echoPhrase('Hello, VendorName!');
+$filamentContactLogs = new RectitudeOpen\FilamentContactLogs();
+echo $filamentContactLogs->echoPhrase('Hello, RectitudeOpen!');
 ```
 
 ## Testing
@@ -69,7 +69,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Rectitude Open](https://github.com/rectitude-open)
 - [All Contributors](../../contributors)
 
 ## License
