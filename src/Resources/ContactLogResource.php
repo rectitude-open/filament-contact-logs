@@ -38,12 +38,12 @@ class ContactLogResource extends Resource
 
     public static function getNavigationLabel(): string
     {
-        return __('menu.nav_item.contact_log');
+        return __('filament-contact-logs::filament-contact-logs.nav.label');
     }
 
     public static function getNavigationGroup(): ?string
     {
-        return __('menu.nav_group.content');
+        return __('filament-contact-logs::filament-contact-logs.nav.group');
     }
 
     public static function getNavigationBadge(): ?string
