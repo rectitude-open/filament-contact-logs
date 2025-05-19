@@ -62,13 +62,13 @@ class ContactLogResource extends Resource
                 Grid::make(['sm' => 3])->schema([
                     Grid::make()->schema([
                         TextInput::make('subject')
-                            ->label(__('Subject'))
+                            ->label(__('filament-contact-logs::filament-contact-logs.field.subject'))
                             ->required()
                             ->maxLength(255)
                             ->columnSpanFull()
                             ->dehydrateStateUsing(fn ($state) => $state ?? ''),
                         Textarea::make('message')
-                            ->label(__('Message'))
+                            ->label(__('filament-contact-logs::filament-contact-logs.field.message'))
                             ->default('')
                             ->rows(5)
                             ->columnSpanFull()
@@ -79,37 +79,37 @@ class ContactLogResource extends Resource
                             ->compact()
                             ->schema([
                                 TextInput::make('name')
-                                    ->label(__('Name'))
+                                    ->label(__('filament-contact-logs::filament-contact-logs.field.name'))
                                     ->maxLength(255)
                                     ->inlineLabel()
                                     ->columnSpanFull()
                                     ->dehydrateStateUsing(fn ($state) => $state ?? ''),
                                 TextInput::make('email')
-                                    ->label(__('Email'))
+                                    ->label(__('filament-contact-logs::filament-contact-logs.field.email'))
                                     ->maxLength(255)
                                     ->inlineLabel()
                                     ->columnSpanFull()
                                     ->dehydrateStateUsing(fn ($state) => $state ?? ''),
                                 TextInput::make('phone')
-                                    ->label(__('Phone'))
+                                    ->label(__('filament-contact-logs::filament-contact-logs.field.phone'))
                                     ->maxLength(255)
                                     ->inlineLabel()
                                     ->columnSpanFull()
                                     ->dehydrateStateUsing(fn ($state) => $state ?? ''),
                                 TextInput::make('ip_address')
-                                    ->label(__('IP Address'))
+                                    ->label(__('filament-contact-logs::filament-contact-logs.field.ip_address'))
                                     ->maxLength(255)
                                     ->inlineLabel()
                                     ->columnSpanFull()
                                     ->dehydrateStateUsing(fn ($state) => $state ?? ''),
                                 Textarea::make('user_agent')
-                                    ->label(__('User Agent'))
+                                    ->label(__('filament-contact-logs::filament-contact-logs.field.user_agent'))
                                     ->default('')
                                     ->rows(3)
                                     ->columnSpanFull()
                                     ->dehydrateStateUsing(fn ($state) => $state ?? ''),
                                 DateTimePicker::make('created_at')
-                                    ->label(__('Created At'))
+                                    ->label(__('filament-contact-logs::filament-contact-logs.field.created_at'))
                                     ->native(false)
                                     ->default(now())
                                     ->suffixIcon('heroicon-o-calendar')
@@ -129,15 +129,15 @@ class ContactLogResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('subject')
-                    ->label(__('Title'))
+                    ->label(__('filament-contact-logs::filament-contact-logs.field.subject'))
                     ->searchable()
                     ->limit(50),
                 TextColumn::make('name')
-                    ->label(__('Name'))
+                    ->label(__('filament-contact-logs::filament-contact-logs.field.name'))
                     ->searchable()
                     ->limit(50),
                 TextColumn::make('created_at')
-                    ->label(__('Created At'))
+                    ->label(__('filament-contact-logs::filament-contact-logs.field.created_at'))
                     ->sortable(),
             ])
             ->filters([
