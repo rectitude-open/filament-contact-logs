@@ -48,7 +48,9 @@ class ContactLogResource extends Resource
 
     public static function getNavigationBadge(): ?string
     {
-        return (string) static::getModel()::count();
+        return config('filament-contact-logs.navigation_badge', true)
+                ? (string) static::getModel()::count()
+                : '';
     }
 
     public static function form(Form $form): Form
