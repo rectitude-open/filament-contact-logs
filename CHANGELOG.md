@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/rectitude-open/filament-contact-logs/compare/v1.1.0...v1.2.0) (2025-05-20)
+
+
+### Features
+
+* add more languages ([2e76d11](https://github.com/rectitude-open/filament-contact-logs/commit/2e76d1174923589ac61f2fcf1fdf821e388303b4))
+* update README to enhance package description and installation instructions ([91a8f8f](https://github.com/rectitude-open/filament-contact-logs/commit/91a8f8fee02a9bd08772ea1916e580073c98db3b))
+
 ## [1.1.0](https://github.com/rectitude-open/filament-contact-logs/compare/v1.0.0...v1.1.0) (2025-05-19)
 
 
