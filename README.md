@@ -1,12 +1,20 @@
-# This is my package filament-contact-logs
+# Filament Contact Logs
 
 ![Do not use](https://img.shields.io/badge/Under%20development-Don't%20use-red)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rectitude-open/filament-contact-logs.svg?style=flat-square)](https://packagist.org/packages/rectitude-open/filament-contact-logs)
 [![Tests](https://github.com/rectitude-open/filament-contact-logs/actions/workflows/run-tests.yml/badge.svg)](https://github.com/rectitude-open/filament-contact-logs/actions/workflows/run-tests.yml)
 [![PHPStan](https://img.shields.io/badge/PHPStan-level%205-brightgreen)](https://phpstan.org/)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/rectitude-open/filament-contact-logs.svg?style=flat-square)](https://packagist.org/packages/rectitude-open/filament-contact-logs)
 [![Total Downloads](https://img.shields.io/packagist/dt/rectitude-open/filament-contact-logs.svg?style=flat-square)](https://packagist.org/packages/rectitude-open/filament-contact-logs)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/rectitude-open/filament-contact-logs/pulls)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Filament Contact Logs is a Filament plugin designed to display contact form submissions collected from your website. Ideal for "Contact Us" pages or similar modules, it provides a read-only interface for viewing user-submitted information such as name, email, subject, and message.
+
+This package is also a standalone part of a CMS project: [FilaPress](https://github.com/rectitude-open/filapress).
+
+Resource | Page | Cluster | Migration | Model | Config | View | Localization
+--- | --- | --- | --- | --- | --- | --- | ---
+✅ | ❌| ❌ | ✅ | ✅ | ✅ | ❌ | ✅  
+
 
 ## Installation
 
@@ -29,24 +37,46 @@ You can publish the config file with:
 php artisan vendor:publish --tag="filament-contact-logs-config"
 ```
 
-Optionally, you can publish the views using
+Optionally, you can publish the translations using
 
 ```bash
-php artisan vendor:publish --tag="filament-contact-logs-views"
+php artisan vendor:publish --tag="filament-contact-logs-translations"
 ```
 
 This is the contents of the published config file:
 
 ```php
 return [
+    'filament_resource' => RectitudeOpen\FilamentContactLogs\Resources\ContactLogResource::class,
+    'model' => RectitudeOpen\FilamentContactLogs\Models\ContactLog::class,
+    'navigation_sort' => 0,
+    'navigation_icon' => 'heroicon-o-envelope-open',
+    'datetime_format' => 'Y-m-d H:i:s',
+    'navigation_badge' => true,
 ];
 ```
 
 ## Usage
 
+The package provides a resource page that allows you to view Contact Logs in your Filament admin panel. 
+
+To use the resource page provided by this package, you need to register it in your Panel Provider first.
+
 ```php
-$filamentContactLogs = new RectitudeOpen\FilamentContactLogs();
-echo $filamentContactLogs->echoPhrase('Hello, RectitudeOpen!');
+namespace App\Providers\Filament;
+
+use RectitudeOpen\FilamentContactLogs\FilamentContactLogsPlugin;
+
+class AdminPanelProvider extends PanelProvider
+{
+    public function panel(Panel $panel): Panel
+    {
+        return $panel
+            ->plugins([
+                FilamentContactLogsPlugin::make()
+            ]);
+    }
+}
 ```
 
 ## Testing
@@ -69,7 +99,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Rectitude Open](https://github.com/rectitude-open)
+- [Aspirant Zhang](https://github.com/aspirantzhang)
 - [All Contributors](../../contributors)
 
 ## License
