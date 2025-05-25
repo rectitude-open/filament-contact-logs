@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/rectitude-open/filament-contact-logs/compare/v1.2.0...v1.3.0) (2025-05-25)
+
+
+### Features
+
+* add info alert component and translations for visitor content warnings ([6e27e75](https://github.com/rectitude-open/filament-contact-logs/commit/6e27e75bacde1c84c2e30a9ca9ef0f0d948c15c8))
+
 ## [1.2.0](https://github.com/rectitude-open/filament-contact-logs/compare/v1.1.0...v1.2.0) (2025-05-20)
 
 
