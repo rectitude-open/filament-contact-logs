@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Kontaktžurnāli',
     'nav.group' => 'Saturs',
 
+    'info.alert' => 'Lūdzu, ņemiet vērā, ka šajā lapā attēloto saturu ir snieguši apmeklētāji. Esiet piesardzīgi un pārbaudiet informāciju neatkarīgi, pirms paļaujaties uz to.',
     'field.subject' => 'Tēma',
     'field.message' => 'Ziņojums',
     'field.name' => 'Vārds',

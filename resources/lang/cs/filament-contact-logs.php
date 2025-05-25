@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Záznamy kontaktů',
     'nav.group' => 'Obsah',
 
+    'info.alert' => 'Vezměte prosím na vědomí, že obsah zobrazený na této stránce je poskytován návštěvníky. Buďte opatrní a před spoléháním se na něj si informace nezávisle ověřte.',
     'field.subject' => 'Předmět',
     'field.message' => 'Zpráva',
     'field.name' => 'Jméno',

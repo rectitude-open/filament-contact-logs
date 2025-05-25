@@ -6,6 +6,7 @@ return [
     'nav.label' => '연락처 로그',
     'nav.group' => '콘텐츠',
 
+    'info.alert' => '이 페이지에 표시된 콘텐츠는 방문자가 제공한 것임을 유의하십시오. 이를 신뢰하기 전에 주의를 기울이고 정보를 독립적으로 확인하십시오.',
     'field.subject' => '제목',
     'field.message' => '메시지',
     'field.name' => '이름',

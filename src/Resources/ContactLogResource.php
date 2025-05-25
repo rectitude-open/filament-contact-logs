@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace RectitudeOpen\FilamentContactLogs\Resources;
 
 use Filament\Forms\Components\DateTimePicker;
-// use RectitudeOpen\FilamentContactLogs\Forms\Components\InfoAlert;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
@@ -18,6 +17,7 @@ use Filament\Tables\Table;
 use Illuminate\Contracts\Support\Htmlable;
 use RectitudeOpen\FilamentContactLogs\Models\ContactLog;
 use RectitudeOpen\FilamentContactLogs\Resources\ContactLogResource\Pages;
+use RectitudeOpen\FilamentInfoAlert\Forms\Components\InfoAlert;
 
 class ContactLogResource extends Resource
 {
@@ -57,10 +57,10 @@ class ContactLogResource extends Resource
     {
         return $form
             ->schema([
-                // InfoAlert::make('info')
-                //     ->message(__('Please note that the content displayed on this page is provided by visitors. Exercise caution and verify information independently before relying on it.'))
-                //     ->type('warning')
-                //     ->columnSpanFull(),
+                InfoAlert::make('info')
+                    ->message(__('filament-contact-logs::filament-contact-logs.info.alert') . ' ')
+                    ->type('warning')
+                    ->columnSpanFull(),
                 Grid::make(['sm' => 3])->schema([
                     Grid::make()->schema([
                         TextInput::make('subject')

@@ -6,6 +6,7 @@ return [
     'nav.label' => 'İletişim Kayıtları',
     'nav.group' => 'İçerik',
 
+    'info.alert' => 'Bu sayfada görüntülenen içeriğin ziyaretçiler tarafından sağlandığını lütfen unutmayın. Güvenmeden önce dikkatli olun ve bilgileri bağımsız olarak doğrulayın.',
     'field.subject' => 'Konu',
     'field.message' => 'Mesaj',
     'field.name' => 'İsim',

@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Regjistrat e kontaktit',
     'nav.group' => 'Përmbajtja',
 
+    'info.alert' => 'Ju lutemi vini re se përmbajtja e shfaqur në këtë faqe është siguruar nga vizitorët. Ushtroni kujdes dhe verifikoni informacionin në mënyrë të pavarur përpara se të mbështeteni në të.',
     'field.subject' => 'Subjekti',
     'field.message' => 'Mesazhi',
     'field.name' => 'Emri',

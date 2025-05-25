@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Registos de Contacto',
     'nav.group' => 'Conteúdo',
 
+    'info.alert' => 'Por favor, note que o conteúdo apresentado nesta página é fornecido por visitantes. Exerça cautela e verifique a informação de forma independente antes de confiar nela.',
     'field.subject' => 'Assunto',
     'field.message' => 'Mensagem',
     'field.name' => 'Nome',

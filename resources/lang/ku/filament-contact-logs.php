@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Têkevinên Têkilî',
     'nav.group' => 'Naverok',
 
+    'info.alert' => 'Ji kerema xwe re bala xwe bidin ku naveroka li ser vê rûpelê ji hêla mêvanan ve tê peyda kirin. Hişyar bin û berî ku hûn pê bawer bikin, agahiyan bi awayekî serbixwe piştrast bikin.',
     'field.subject' => 'Mijar',
     'field.message' => 'Peyam',
     'field.name' => 'Nav',

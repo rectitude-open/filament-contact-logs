@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Dzienniki kontaktów',
     'nav.group' => 'Zawartość',
 
+    'info.alert' => 'Uwaga: treści wyświetlane na tej stronie są dostarczane przez odwiedzających. Zachowaj ostrożność i zweryfikuj informacje niezależnie przed poleganiem na nich.',
     'field.subject' => 'Temat',
     'field.message' => 'Wiadomość',
     'field.name' => 'Imię',

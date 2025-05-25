@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Log Kontak',
     'nav.group' => 'Konten',
 
+    'info.alert' => 'Harap dicatat bahwa konten yang ditampilkan di halaman ini disediakan oleh pengunjung. Berhati-hatilah dan verifikasi informasi secara independen sebelum mengandalkannya.',
     'field.subject' => 'Subjek',
     'field.message' => 'Pesan',
     'field.name' => 'Nama',

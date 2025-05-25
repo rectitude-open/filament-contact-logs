@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Kontaktprotokolle',
     'nav.group' => 'Inhalt',
 
+    'info.alert' => 'Bitte beachten Sie, dass der auf dieser Seite angezeigte Inhalt von Besuchern bereitgestellt wird. Seien Sie vorsichtig und überprüfen Sie die Informationen unabhängig, bevor Sie sich darauf verlassen.',
     'field.subject' => 'Betreff',
     'field.message' => 'Nachricht',
     'field.name' => 'Name',

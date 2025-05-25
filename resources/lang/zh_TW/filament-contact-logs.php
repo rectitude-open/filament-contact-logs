@@ -6,6 +6,7 @@ return [
     'nav.label' => '聯絡紀錄',
     'nav.group' => '內容',
 
+    'info.alert' => '請注意，此頁面上顯示的內容是由訪客提供的。在依賴此資訊之前，請謹慎行事並獨立驗證資訊。',
     'field.subject' => '主題',
     'field.message' => '訊息',
     'field.name' => '姓名',

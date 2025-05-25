@@ -6,6 +6,7 @@ return [
     'nav.label' => 'Journaux de contact',
     'nav.group' => 'Contenu',
 
+    'info.alert' => 'Veuillez noter que le contenu affiché sur cette page est fourni par les visiteurs. Soyez prudent et vérifiez les informations de manière indépendante avant de vous y fier.',
     'field.subject' => 'Sujet',
     'field.message' => 'Message',
     'field.name' => 'Nom',
