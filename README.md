@@ -1,3 +1,4 @@
+![Filament Contact Logs Banner](./art/Filament%20Contact%20Logs.png)
 # Filament Contact Logs
 
 ![Do not use](https://img.shields.io/badge/Under%20development-Don't%20use-red)

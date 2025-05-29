@@ -1,8 +1,9 @@
 {
     "name": "rectitude-open/filament-contact-logs",
-    "description": "This is my package filament-contact-logs",
+    "description": "A Filament plugin to display website contact form submissions with a read-only interface.",
     "keywords": [
-        "filament",
+        "contact form",
+        "laravel",
         "filament plugin"
     ],
     "homepage": "https://github.com/rectitude-open/filament-contact-logs",
@@ -13,8 +14,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Rectitude Open",
-            "email": "open@rectitude.dev",
+            "name": "Aspirant Zhang",
+            "email": "admin@aspirantzhang.com",
             "role": "Developer"
         }
     ],
