@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/rectitude-open/filament-contact-logs/compare/v1.3.0...v1.4.0) (2025-08-10)
+
+
+### Features
+
+* add getModelLabel method to ContactLogResource for improved resource labeling ([69c164e](https://github.com/rectitude-open/filament-contact-logs/commit/69c164ebd6d2e9b6b135621758dbfbae6723fe24))
+* add more translations ([03d159c](https://github.com/rectitude-open/filament-contact-logs/commit/03d159c779ff56be12aadc8f9f59ac87fe400710))
+* update README and composer.json with accurate descriptions and author information ([d9fbcdd](https://github.com/rectitude-open/filament-contact-logs/commit/d9fbcddda009be9f62ced69190088f9a1f771294))
+
+
+### Bug Fixes
+
+* update navigation_sort value to ensure correct ordering in the contact logs ([ad1bff6](https://github.com/rectitude-open/filament-contact-logs/commit/ad1bff683d93838595f8afc2e1d6fbda291d0cdd))
+
 ## [1.3.0](https://github.com/rectitude-open/filament-contact-logs/compare/v1.2.0...v1.3.0) (2025-05-25)
 
 
