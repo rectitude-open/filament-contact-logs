@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Registros de Contato',
-    'nav.group' => 'Conteúdo',
-
-    'info.alert' => 'Por favor, observe que o conteúdo exibido nesta página é fornecido por visitantes. Tenha cuidado e verifique as informações de forma independente antes de confiar nelas.',
-    'field.subject' => 'Assunto',
-    'field.message' => 'Mensagem',
-    'field.name' => 'Nome',
-    'field.email' => 'E-mail',
-    'field.phone' => 'Telefone',
-    'field.ip_address' => 'Endereço IP',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Criado em',
+    'nav' => [
+        'label' => 'Registros do formulário de contato',
+        'group' => 'Conteúdo',
+    ],
+    'info' => [
+        'alert' => 'Observe que o conteúdo exibido nesta página é fornecido por visitantes. Tenha cautela e verifique as informações de forma independente antes de confiar nelas.',
+    ],
+    'field' => [
+        'subject' => 'Assunto',
+        'message' => 'Mensagem',
+        'name' => 'Nome',
+        'email' => 'E-mail',
+        'phone' => 'Telefone',
+        'ip_address' => 'Endereço IP',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Criado em',
+    ],
+    'resource' => [
+        'label' => 'Registro do formulário de contato',
+    ],
 ];

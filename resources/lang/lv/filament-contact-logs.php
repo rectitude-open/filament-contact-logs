@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Kontaktžurnāli',
-    'nav.group' => 'Saturs',
-
-    'info.alert' => 'Lūdzu, ņemiet vērā, ka šajā lapā attēloto saturu ir snieguši apmeklētāji. Esiet piesardzīgi un pārbaudiet informāciju neatkarīgi, pirms paļaujaties uz to.',
-    'field.subject' => 'Tēma',
-    'field.message' => 'Ziņojums',
-    'field.name' => 'Vārds',
-    'field.email' => 'E-pasts',
-    'field.phone' => 'Tālrunis',
-    'field.ip_address' => 'IP adrese',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Izveidots',
+    'nav' => [
+        'label' => 'Saziņas veidlapas žurnāli',
+        'group' => 'Saturs',
+    ],
+    'info' => [
+        'alert' => 'Lūdzu, ņemiet vērā, ka šajā lapā redzamais saturs ir apmeklētāju sniegts. Esiet piesardzīgs un pārbaudiet informāciju patstāvīgi pirms tās izmantošanas.',
+    ],
+    'field' => [
+        'subject' => 'Tēma',
+        'message' => 'Ziņojums',
+        'name' => 'Vārds',
+        'email' => 'E-pasts',
+        'phone' => 'Tālrunis',
+        'ip_address' => 'IP adrese',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Izveidots',
+    ],
+    'resource' => [
+        'label' => 'Saziņas veidlapas žurnāls',
+    ],
 ];

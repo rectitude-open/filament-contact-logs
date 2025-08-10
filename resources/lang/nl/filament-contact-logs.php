@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Contactlogboeken',
-    'nav.group' => 'Inhoud',
-
-    'info.alert' => 'Houd er rekening mee dat de inhoud die op deze pagina wordt weergegeven, door bezoekers wordt aangeleverd. Wees voorzichtig en verifieer de informatie onafhankelijk voordat u erop vertrouwt.',
-    'field.subject' => 'Onderwerp',
-    'field.message' => 'Bericht',
-    'field.name' => 'Naam',
-    'field.email' => 'E-mail',
-    'field.phone' => 'Telefoon',
-    'field.ip_address' => 'IP-adres',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Aangemaakt op',
+    'nav' => [
+        'label' => 'Contactformulier logs',
+        'group' => 'Inhoud',
+    ],
+    'info' => [
+        'alert' => 'Let op: de inhoud op deze pagina is aangeleverd door bezoekers. Wees voorzichtig en controleer de informatie zelfstandig voordat u erop vertrouwt.',
+    ],
+    'field' => [
+        'subject' => 'Onderwerp',
+        'message' => 'Bericht',
+        'name' => 'Naam',
+        'email' => 'E-mail',
+        'phone' => 'Telefoon',
+        'ip_address' => 'IP-adres',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Aangemaakt op',
+    ],
+    'resource' => [
+        'label' => 'Contactformulier log',
+    ],
 ];

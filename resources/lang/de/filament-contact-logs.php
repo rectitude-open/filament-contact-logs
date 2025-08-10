@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Kontaktprotokolle',
-    'nav.group' => 'Inhalt',
-
-    'info.alert' => 'Bitte beachten Sie, dass der auf dieser Seite angezeigte Inhalt von Besuchern bereitgestellt wird. Seien Sie vorsichtig und überprüfen Sie die Informationen unabhängig, bevor Sie sich darauf verlassen.',
-    'field.subject' => 'Betreff',
-    'field.message' => 'Nachricht',
-    'field.name' => 'Name',
-    'field.email' => 'E-Mail',
-    'field.phone' => 'Telefon',
-    'field.ip_address' => 'IP-Adresse',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Erstellt am',
+    'nav' => [
+        'label' => 'Kontaktformular-Protokolle',
+        'group' => 'Inhalt',
+    ],
+    'info' => [
+        'alert' => 'Bitte beachten Sie, dass die auf dieser Seite angezeigten Inhalte von Besuchern bereitgestellt werden. Seien Sie vorsichtig und überprüfen Sie die Informationen eigenständig, bevor Sie sich darauf verlassen.',
+    ],
+    'field' => [
+        'subject' => 'Betreff',
+        'message' => 'Nachricht',
+        'name' => 'Name',
+        'email' => 'E-Mail',
+        'phone' => 'Telefon',
+        'ip_address' => 'IP-Adresse',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Erstellt am',
+    ],
+    'resource' => [
+        'label' => 'Kontaktformular-Protokoll',
+    ],
 ];

@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Záznamy kontaktov',
-    'nav.group' => 'Obsah',
-
-    'info.alert' => 'Upozorňujeme, že obsah zobrazený na tejto stránke je poskytovaný návštevníkmi. Buďte opatrní a pred spoľahnutím sa na tieto informácie si ich nezávisle overte.',
-    'field.subject' => 'Predmet',
-    'field.message' => 'Správa',
-    'field.name' => 'Meno',
-    'field.email' => 'E-mail',
-    'field.phone' => 'Telefón',
-    'field.ip_address' => 'IP adresa',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Vytvorené',
+    'nav' => [
+        'label' => 'Záznamy kontaktného formulára',
+        'group' => 'Obsah',
+    ],
+    'info' => [
+        'alert' => 'Upozorňujeme, že obsah zobrazený na tejto stránke poskytli návštevníci. Pred použitím si informácie overte.',
+    ],
+    'field' => [
+        'subject' => 'Predmet',
+        'message' => 'Správa',
+        'name' => 'Meno',
+        'email' => 'E-mail',
+        'phone' => 'Telefón',
+        'ip_address' => 'IP adresa',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Vytvorené',
+    ],
+    'resource' => [
+        'label' => 'Záznam kontaktného formulára',
+    ],
 ];

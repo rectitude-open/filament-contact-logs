@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Jurnale de contact',
-    'nav.group' => 'Conținut',
-
-    'info.alert' => 'Vă rugăm să rețineți că conținutul afișat pe această pagină este furnizat de vizitatori. Fiți precauți și verificați informațiile în mod independent înainte de a vă baza pe ele.',
-    'field.subject' => 'Subiect',
-    'field.message' => 'Mesaj',
-    'field.name' => 'Nume',
-    'field.email' => 'E-mail',
-    'field.phone' => 'Telefon',
-    'field.ip_address' => 'Adresă IP',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Creat la',
+    'nav' => [
+        'label' => 'Jurnale formular de contact',
+        'group' => 'Conținut',
+    ],
+    'info' => [
+        'alert' => 'Vă rugăm să rețineți că informațiile afișate pe această pagină sunt furnizate de vizitatori. Fiți precaut și verificați informațiile independent înainte de a vă baza pe ele.',
+    ],
+    'field' => [
+        'subject' => 'Subiect',
+        'message' => 'Mesaj',
+        'name' => 'Nume',
+        'email' => 'E-mail',
+        'phone' => 'Telefon',
+        'ip_address' => 'Adresă IP',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Creat la',
+    ],
+    'resource' => [
+        'label' => 'Jurnal formular de contact',
+    ],
 ];

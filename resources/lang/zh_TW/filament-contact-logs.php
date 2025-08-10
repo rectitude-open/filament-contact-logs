@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => '聯絡紀錄',
-    'nav.group' => '內容',
-
-    'info.alert' => '請注意，此頁面上顯示的內容是由訪客提供的。在依賴此資訊之前，請謹慎行事並獨立驗證資訊。',
-    'field.subject' => '主題',
-    'field.message' => '訊息',
-    'field.name' => '姓名',
-    'field.email' => '電子郵件',
-    'field.phone' => '電話',
-    'field.ip_address' => 'IP位址',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => '建立時間',
+    'nav' => [
+        'label' => '聯絡表單紀錄',
+        'group' => '內容',
+    ],
+    'info' => [
+        'alert' => '請注意，此頁面上顯示的內容由訪客提供，請自行核實資訊後再作判斷，切勿輕信。',
+    ],
+    'field' => [
+        'subject' => '主題',
+        'message' => '訊息',
+        'name' => '姓名',
+        'email' => '電子郵件',
+        'phone' => '電話',
+        'ip_address' => 'IP位址',
+        'user_agent' => 'User Agent',
+        'created_at' => '建立時間',
+    ],
+    'resource' => [
+        'label' => '聯絡表單紀錄',
+    ],
 ];

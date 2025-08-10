@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Kapcsolati naplók',
-    'nav.group' => 'Tartalom',
-
-    'info.alert' => 'Kérjük, vegye figyelembe, hogy az ezen az oldalon megjelenített tartalmat látogatók biztosítják. Legyen óvatos, és a rá való támaszkodás előtt független módon ellenőrizze az információkat.',
-    'field.subject' => 'Tárgy',
-    'field.message' => 'Üzenet',
-    'field.name' => 'Név',
-    'field.email' => 'E-mail',
-    'field.phone' => 'Telefon',
-    'field.ip_address' => 'IP-cím',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Létrehozva',
+    'nav' => [
+        'label' => 'Kapcsolati űrlap naplók',
+        'group' => 'Tartalom',
+    ],
+    'info' => [
+        'alert' => 'Felhívjuk figyelmét, hogy az ezen az oldalon megjelenített tartalmat a látogatók szolgáltatták. Legyen óvatos, és függetlenül ellenőrizze az információkat, mielőtt megbízik bennük.',
+    ],
+    'field' => [
+        'subject' => 'Tárgy',
+        'message' => 'Üzenet',
+        'name' => 'Név',
+        'email' => 'E-mail',
+        'phone' => 'Telefon',
+        'ip_address' => 'IP-cím',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Létrehozva',
+    ],
+    'resource' => [
+        'label' => 'Kapcsolati űrlap napló',
+    ],
 ];

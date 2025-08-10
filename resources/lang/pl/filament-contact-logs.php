@@ -3,16 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'nav.label' => 'Dzienniki kontaktów',
-    'nav.group' => 'Zawartość',
-
-    'info.alert' => 'Uwaga: treści wyświetlane na tej stronie są dostarczane przez odwiedzających. Zachowaj ostrożność i zweryfikuj informacje niezależnie przed poleganiem na nich.',
-    'field.subject' => 'Temat',
-    'field.message' => 'Wiadomość',
-    'field.name' => 'Imię',
-    'field.email' => 'E-mail',
-    'field.phone' => 'Telefon',
-    'field.ip_address' => 'Adres IP',
-    'field.user_agent' => 'User Agent',
-    'field.created_at' => 'Utworzono',
+    'nav' => [
+        'label' => 'Logi formularza kontaktowego',
+        'group' => 'Zawartość',
+    ],
+    'info' => [
+        'alert' => 'Należy pamiętać, że treści wyświetlane na tej stronie są dostarczane przez odwiedzających. Zachowaj ostrożność i samodzielnie zweryfikuj informacje przed ich użyciem.',
+    ],
+    'field' => [
+        'subject' => 'Temat',
+        'message' => 'Wiadomość',
+        'name' => 'Imię',
+        'email' => 'E-mail',
+        'phone' => 'Telefon',
+        'ip_address' => 'Adres IP',
+        'user_agent' => 'User Agent',
+        'created_at' => 'Utworzono',
+    ],
+    'resource' => [
+        'label' => 'Log formularza kontaktowego',
+    ],
 ];
