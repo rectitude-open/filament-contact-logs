@@ -53,6 +53,11 @@ class ContactLogResource extends Resource
                 : '';
     }
 
+    public static function getModelLabel(): string
+    {
+        return __('filament-contact-logs::filament-contact-logs.resource.label');
+    }
+
     public static function form(Form $form): Form
     {
         return $form
